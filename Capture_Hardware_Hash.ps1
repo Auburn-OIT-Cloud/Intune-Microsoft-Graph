@@ -1,0 +1,7 @@
+﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+New-Item -Type Directory -Path "C:\HWID"
+Set-Location -Path "C:\HWID"
+$env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Invoke-WebRequest "https://raw.githubusercontent.com/Auburn-OIT-Cloud/Intune-Microsoft-Graph/main/Get-WindowsAutoPilotInfo.ps1" -OutFile 'C:\Program Files\WindowsPowerShell\Scripts\Get-WindowsAutoPilotInfo.ps1'
+Get-WindowsAutopilotInfo -OutputFile AutopilotHWID.csv
