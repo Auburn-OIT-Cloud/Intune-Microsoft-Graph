@@ -127,7 +127,7 @@ param(
 	[Parameter(Mandatory=$True,ParameterSetName = 'Online')] [Switch] $Online = $false,
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $TenantId = "ccb6deed-bd29-4b38-8979-d72780f62d3b",
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AppId = "d7847b25-740f-420d-81b2-02e0ea04bef3",
-	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AppSecret = "Mvu8Q~r.9K5T7xm08pVXrd6mAWsAZ0oOpcYVJaRz",
+	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AppSecret = "",
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AddToGroup = "",
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AssignedComputerName = "",
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [Switch] $Assign = $false, 
